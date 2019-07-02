@@ -13,7 +13,7 @@ export class ProductListComponent  {
 
  //// implements OnInit
 
-  pageTitle = 'Product List';
+  pageTitle :string = 'Product List';
   products: any[] = [
 
     {
@@ -37,9 +37,9 @@ export class ProductListComponent  {
       "imageUrl": "https://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png"
     }
   ];
-  imageWidth = 50;
-  imageMargin = 2;
- // showImage = false;
+  imageWidth : number= 50;
+  imageMargin : number= 2;
+  showImage :boolean= false;
  // errorMessage = '';
 
  // _listFilter = '';
@@ -68,9 +68,9 @@ export class ProductListComponent  {
  //     product.productName.toLocaleLowerCase().indexOf(filterBy) !== -1);
  // }
 
- // toggleImage(): void {
- //   this.showImage = !this.showImage;
- // }
+  toggleImage(): void {
+    this.showImage = !this.showImage;
+  }
 
  // ngOnInit(): void {
  //   this.productService.getProducts().subscribe(
