@@ -37,8 +37,8 @@ export class ProductListComponent  {
       "imageUrl": "https://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png"
     }
   ];
- // imageWidth = 50;
- // imageMargin = 2;
+  imageWidth = 50;
+  imageMargin = 2;
  // showImage = false;
  // errorMessage = '';
 
