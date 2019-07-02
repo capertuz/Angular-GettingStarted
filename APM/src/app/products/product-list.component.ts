@@ -39,7 +39,8 @@ export class ProductListComponent  {
   ];
   imageWidth : number= 50;
   imageMargin : number= 2;
-  showImage :boolean= false;
+  showImage: boolean = false;
+  listFilter: string = 'cart';
  // errorMessage = '';
 
  // _listFilter = '';
