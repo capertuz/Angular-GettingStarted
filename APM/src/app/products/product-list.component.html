@@ -35,10 +35,10 @@
         <tbody>
           <tr *ngFor='let product of products'>
             <td>
-              <img [src]='product.imageUrl'
+              <img *ngIf='showImage' [src]='product.imageUrl'
                    [title]='product.productName'
                    [style.width.px]='imageWidth'
-                   [style.margin.px]='imageMargin'><!--<img *ngIf='showImage'-->
+                   [style.margin.px]='imageMargin'><!--<img -->
             </td>
             <td>
               {{ product.productName }}
